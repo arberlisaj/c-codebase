@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -I./include
-SRC = src/main.c src/sayHello.c
+SRC = $(wildcard src/*.c)
 OUT = output
 
 $(OUT): $(SRC)
